@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShieldCheck, Zap, Eye, Star } from "lucide-react";
@@ -18,7 +20,9 @@ export default function LandingPage() {
           size="lg"
           className="bg-primary text-primary-foreground hover:bg-primary/90"
         >
-          Install Extension
+          <a href="/chrome-mv3-prod.zip" download="white-pattern.zip">
+            Install Extension
+          </a>
         </Button>
       </section>
 
