@@ -120,7 +120,13 @@ export default function LandingPage() {
   );
 }
 
-function FeatureCard({ icon, title, description }) {
+type FeatureCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};
+
+function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <Card>
       <CardContent className="pt-6 text-center">
